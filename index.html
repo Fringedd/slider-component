@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="text-content">
+        <h1>Simple, traffic-based pricing</h1>
+        <br />
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="box-content">
+        <div class="inside-box">
+          <div class="top">
+            <p><span id="followers">100k</span> Pageviews</p>
+            <div class="right">
+              <p id="dollars">$<span class="amount">16</span></p>
+              <p id="month">/month</p>
+            </div>
+          </div>
+          <div class="grid">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              id="myRange"
+              step="5"
+            />
+            <div class="select" id="selector">
+              <div class="SelectBtn">
+                <img src="./images/icon-slider.svg" alt="" />
+              </div>
+            </div>
+            <div class="progress" id="progressBar"></div>
+          </div>
+          <div class="billing">
+            <p>Monthly Billing</p>
+            <div class="toggle" id="toggle1">
+              <div class="toggle-ball"></div>
+            </div>
+            <p>Yearly Billing / <span class="discount"> 25% discount</span></p>
+          </div>
+          <div class="bottom">
+            <div class="left2">
+              <ul>
+                <li>
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>Unlimited websites</p>
+                </li>
+                <li>
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>100% data ownership</p>
+                </li>
+                <li>
+                  <img src="./images/icon-check.svg" alt="" />
+                  <p>Email Reports</p>
+                </li>
+              </ul>
+            </div>
+            <div class="right2">
+              <button class="btn" type="button">Start my trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Pageviews $ /month Monthly Billing Yearly Billing 25% discount Unlimited
+    websites 100% data ownership Email reports Start my trial --->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
